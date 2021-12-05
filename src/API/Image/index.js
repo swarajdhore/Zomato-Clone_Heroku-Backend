@@ -44,7 +44,7 @@ Router.post("/", upload.single("file"), async (req, res) => {
 
     //s3 bucket options
     const bucketOptions = {
-      Bucket: "shapeai-zomato-abcd",
+      Bucket: "zomato-clone-swarajdhore",
       Key: file.originalname,
       Body: file.buffer,
       ContentType: file.mimetype,
